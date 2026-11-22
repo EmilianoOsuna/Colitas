@@ -22,6 +22,8 @@ export const perritos: Perrito[] = [
   { id: 'rojo', descripcion: 'Negrito · collar rojo', mensaje: 'el negrito de collar rojo', collar: '#e0393e', foto: 'negrito-collar-rojo', alt: 'Cachorro negro con collar rojo asomándose por la ventana de un carro', sexoEdad: 'Macho' },
   { id: 'atigrado', descripcion: 'Atigrado', mensaje: 'el atigrado', collar: '#7a5634', foto: 'atigrado', alt: 'Cachorro atigrado café', sexoEdad: 'Macho' },
   { id: 'canela', descripcion: 'Canela · collar verde', mensaje: 'la canela de collar verde', collar: '#6fd13f', foto: 'canela', alt: 'Cachorrita color canela con collar verde asomándose por la ventana de un carro', sexoEdad: 'Hembra' },
+  { id: 'dormilon', descripcion: 'Canelito clarito', mensaje: 'el canelito clarito', collar: '#d9a86c', foto: 'adoptado-dormilon', alt: 'Cachorro canela dormido en su camita nueva con juguetes', sexoEdad: 'Macho', adoptado: true },
+  { id: 'bolsa', descripcion: 'Canelito · hocico negro', mensaje: 'el canelito de hocico negro', collar: '#b9824a', foto: 'adoptado-bolsa', alt: 'Cachorro canela de hocico negro asomándose de la bolsa de su nueva familia', sexoEdad: 'Macho', adoptado: true },
 ]
 
 export const enlaceWhatsApp = (texto: string) =>
