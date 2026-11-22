@@ -26,7 +26,7 @@ export function VideoPortada() {
   }, [animar])
 
   return (
-    <div className="relative aspect-square w-full overflow-hidden border-[6px] border-cream bg-photo [border-radius:46%_54%_44%_56%/40%_42%_58%_60%] md:aspect-[4/5] md:border-8">
+    <div className="absolute inset-0 overflow-hidden border-[6px] border-cream bg-photo [border-radius:46%_54%_44%_56%/40%_42%_58%_60%] md:border-8">
       {animar ? (
         <video
           ref={ref}
