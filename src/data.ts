@@ -24,13 +24,6 @@ export const perritos: Perrito[] = [
   { id: 'canela', descripcion: 'Canela · collar verde', mensaje: 'la canela de collar verde', collar: '#6fd13f', foto: 'canela', alt: 'Cachorrita color canela con collar verde asomándose por la ventana de un carro', sexoEdad: 'Hembra' },
 ]
 
-// Fotos que van rotando en la portada (nombre base en /public/img)
-export const fotosPortada = [
-  { foto: 'hero', alt: 'Dos de los cachorros descansando en su casita', posicion: '50% 40%' },
-  { foto: 'negrito-collar-rojo', alt: 'El negrito de collar rojo asomándose por la ventana del carro', posicion: '50% 35%' },
-  { foto: 'canela', alt: 'La canela asomándose por la ventana del carro', posicion: '40% 30%' },
-]
-
 export const enlaceWhatsApp = (texto: string) =>
   `https://wa.me/${contacto.whatsapp}?text=${encodeURIComponent(texto)}`
 

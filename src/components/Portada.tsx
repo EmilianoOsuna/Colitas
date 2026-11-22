@@ -1,5 +1,5 @@
 import { adoptados, contacto, disponibles, enlaceWhatsApp, mensajeGeneral, tituloPortada } from '../data'
-import { SliderPortada } from './SliderPortada'
+import { VideoPortada } from './VideoPortada'
 import { Chat, Huella } from './Iconos'
 
 export function Portada() {
@@ -55,7 +55,7 @@ export function Portada() {
       </div>
 
       <div className="entrar relative mx-auto w-full max-w-[420px]" style={{ animationDelay: '200ms' }}>
-        <SliderPortada />
+        <VideoPortada />
         {n > 0 && (
           <span className="absolute right-1 bottom-2 flex size-[86px] rotate-[8deg] flex-col items-center justify-center rounded-full border-4 border-cream bg-cobalt text-center text-white md:right-auto md:bottom-7 md:-left-1.5 md:size-[104px] md:-rotate-[10deg]">
             <span className="font-slab text-4xl leading-[0.9] md:text-[2.5rem]">{n}</span>
