@@ -4,7 +4,7 @@ import { Reveal } from './Reveal'
 const pasos = [
   { t: 'Elige', d: 'Mira sus fotos y escoge al que te robe el corazón.' },
   { t: 'Escribe', d: `Manda un WhatsApp a ${contacto.nombre} y dile cuál te gustó.` },
-  { t: 'Conócelo', d: `Ve por él a ${contacto.entrega.split(',')[0]} y llévalo a casa.` },
+  { t: 'Conócelo', d: `Pasa por tu cachorro a ${contacto.entrega.split(',')[0]} y llévalo a casa.` },
 ]
 
 export function Pasos() {

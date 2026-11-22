@@ -17,11 +17,18 @@ export type Perrito = {
 }
 
 export const perritos: Perrito[] = [
-  { id: 'azul', descripcion: 'Negrito · collar azul', mensaje: 'el negrito de collar azul', collar: '#3d8fe0', foto: 'negrito-collar-azul', alt: 'Cachorro negro con collar azul' },
-  { id: 'pinta', descripcion: 'Negrito · patita pinta', mensaje: 'el negrito de la patita pinta', collar: '#ffffff', foto: 'negrito-patita-pinta', alt: 'Cachorro negro con una pata blanca con manchas' },
-  { id: 'rojo', descripcion: 'Negrito · collar rojo', mensaje: 'el negrito de collar rojo', collar: '#e0393e', foto: 'negrito-collar-rojo', alt: 'Cachorro negro con pecho blanco y collar rojo' },
-  { id: 'atigrado', descripcion: 'Atigrado', mensaje: 'el atigrado', collar: '#7a5634', foto: 'atigrado', alt: 'Cachorro atigrado café' },
-  { id: 'canela', descripcion: 'Canela · collar verde', mensaje: 'el canela de collar verde', collar: '#6fd13f', foto: 'canela', alt: 'Cachorro color canela con hocico oscuro y collar verde' },
+  { id: 'azul', descripcion: 'Negrito · collar azul', mensaje: 'el negrito de collar azul', collar: '#3d8fe0', foto: 'negrito-collar-azul', alt: 'Cachorro negro con collar azul', sexoEdad: 'Macho' },
+  { id: 'pinta', descripcion: 'Negrito · patita pinta', mensaje: 'el negrito de la patita pinta', collar: '#ffffff', foto: 'negrito-patita-pinta', alt: 'Cachorro negro con una pata blanca con manchas', sexoEdad: 'Macho' },
+  { id: 'rojo', descripcion: 'Negrito · collar rojo', mensaje: 'el negrito de collar rojo', collar: '#e0393e', foto: 'negrito-collar-rojo', alt: 'Cachorro negro con collar rojo asomándose por la ventana de un carro', sexoEdad: 'Macho' },
+  { id: 'atigrado', descripcion: 'Atigrado', mensaje: 'el atigrado', collar: '#7a5634', foto: 'atigrado', alt: 'Cachorro atigrado café', sexoEdad: 'Macho' },
+  { id: 'canela', descripcion: 'Canela · collar verde', mensaje: 'la canela de collar verde', collar: '#6fd13f', foto: 'canela', alt: 'Cachorrita color canela con collar verde asomándose por la ventana de un carro', sexoEdad: 'Hembra' },
+]
+
+// Fotos que van rotando en la portada (nombre base en /public/img)
+export const fotosPortada = [
+  { foto: 'hero', alt: 'Dos de los cachorros descansando en su casita', posicion: '50% 40%' },
+  { foto: 'negrito-collar-rojo', alt: 'El negrito de collar rojo asomándose por la ventana del carro', posicion: '50% 35%' },
+  { foto: 'canela', alt: 'La canela asomándose por la ventana del carro', posicion: '40% 30%' },
 ]
 
 export const enlaceWhatsApp = (texto: string) =>
