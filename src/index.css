@@ -1,0 +1,76 @@
+@import "tailwindcss";
+@import "@fontsource/zilla-slab/latin-700.css";
+@import "@fontsource-variable/figtree";
+
+@theme {
+  --color-cream: #fbf5e9;
+  --color-sun: #f4b41a;
+  --color-cobalt: #2340a8;
+  --color-cobalt-dark: #18307f;
+  --color-ink: #1c1b2e;
+  --color-muted: #57546a;
+  --color-line: #eadfca;
+  --color-photo: #efe6d3;
+  --font-sans: "Figtree Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-slab: "Zilla Slab", Georgia, serif;
+  --ease-suave: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  @apply bg-cream font-sans text-ink antialiased;
+}
+:focus-visible {
+  outline: 3px solid var(--color-cobalt);
+  outline-offset: 3px;
+}
+
+/* Entrada al cargar: solo opacity + transform (no causan relayout) */
+@keyframes subir {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: none; }
+}
+.entrar {
+  animation: subir 0.7s var(--ease-suave) both;
+}
+
+/* Aparecer al hacer scroll (lo activa <Reveal>) */
+.js .reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s var(--ease-suave), transform 0.6s var(--ease-suave);
+}
+.js .reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Botones: se hunden un poquito al presionar */
+.boton {
+  transition: transform 0.15s var(--ease-suave), background-color 0.2s;
+  -webkit-tap-highlight-color: transparent;
+}
+.boton:active { transform: scale(0.97); }
+
+/* Zoom suave a la foto solo en dispositivos con mouse */
+@media (hover: hover) {
+  .tarjeta img { transition: transform 0.5s var(--ease-suave); }
+  .tarjeta:hover img { transform: scale(1.04); }
+  .boton:hover { transform: translateY(-1px); }
+}
+
+.sin-barra { scrollbar-width: none; }
+.sin-barra::-webkit-scrollbar { display: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .js .reveal { opacity: 1; transform: none; }
+}
