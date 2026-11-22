@@ -16,12 +16,13 @@ export type Perrito = {
   adoptado?: boolean // ponlo en true cuando encuentre casa
 }
 
+// Orden alternado (negrito, clarito, negrito…) para que se distingan entre sí
 export const perritos: Perrito[] = [
   { id: 'azul', descripcion: 'Negrito · collar azul', mensaje: 'el negrito de collar azul', collar: '#3d8fe0', foto: 'negrito-collar-azul', alt: 'Cachorro negro con collar azul', sexoEdad: 'Macho' },
-  { id: 'pinta', descripcion: 'Negrito · patita pinta', mensaje: 'el negrito de la patita pinta', collar: '#ffffff', foto: 'negrito-patita-pinta', alt: 'Cachorro negro con una pata blanca con manchas', sexoEdad: 'Macho' },
-  { id: 'rojo', descripcion: 'Negrito · collar rojo', mensaje: 'el negrito de collar rojo', collar: '#e0393e', foto: 'negrito-collar-rojo', alt: 'Cachorro negro con collar rojo asomándose por la ventana de un carro', sexoEdad: 'Macho' },
   { id: 'atigrado', descripcion: 'Atigrado', mensaje: 'el atigrado', collar: '#7a5634', foto: 'atigrado', alt: 'Cachorro atigrado café', sexoEdad: 'Macho' },
+  { id: 'rojo', descripcion: 'Negrito · collar rojo', mensaje: 'el negrito de collar rojo', collar: '#e0393e', foto: 'negrito-collar-rojo', alt: 'Cachorro negro con collar rojo asomándose por la ventana de un carro', sexoEdad: 'Macho' },
   { id: 'canela', descripcion: 'Canela · collar verde', mensaje: 'la canela de collar verde', collar: '#6fd13f', foto: 'canela', alt: 'Cachorrita color canela con collar verde asomándose por la ventana de un carro', sexoEdad: 'Hembra' },
+  { id: 'pinta', descripcion: 'Negrito · patita pinta', mensaje: 'el negrito de la patita pinta', collar: '#ffffff', foto: 'negrito-patita-pinta', alt: 'Cachorro negro con una pata blanca con manchas', sexoEdad: 'Macho' },
   { id: 'dormilon', descripcion: 'Canelito clarito', mensaje: 'el canelito clarito', collar: '#d9a86c', foto: 'adoptado-dormilon', alt: 'Cachorro canela dormido en su camita nueva con juguetes', sexoEdad: 'Macho', adoptado: true },
   { id: 'bolsa', descripcion: 'Canelito · hocico negro', mensaje: 'el canelito de hocico negro', collar: '#b9824a', foto: 'adoptado-bolsa', alt: 'Cachorro canela de hocico negro asomándose de la bolsa de su nueva familia', sexoEdad: 'Macho', adoptado: true },
 ]
