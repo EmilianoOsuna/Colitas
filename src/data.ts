@@ -28,3 +28,16 @@ export const enlaceWhatsApp = (texto: string) =>
   `https://wa.me/${contacto.whatsapp}?text=${encodeURIComponent(texto)}`
 
 export const mensajeGeneral = 'Hola, vi la página de los perritos y me interesa adoptar'
+
+// ---- Conteos que se recalculan solos según `adoptado` ----
+export const disponibles = perritos.filter((p) => !p.adoptado)
+export const adoptados = perritos.filter((p) => p.adoptado)
+
+const palabras = ['Cero', 'Una', 'Dos', 'Tres', 'Cuatro', 'Cinco', 'Seis', 'Siete', 'Ocho', 'Nueve', 'Diez']
+export const enLetras = (n: number) => palabras[n] ?? String(n)
+
+export function tituloPortada(n: number) {
+  if (n === 0) return 'Todas las colitas encontraron familia.'
+  if (n === 1) return 'Una colita busca familia.'
+  return `${enLetras(n)} colitas buscan familia.`
+}

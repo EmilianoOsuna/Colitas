@@ -15,8 +15,11 @@ Todo vive en `src/data.ts`:
 
 - `contacto`: nombre, teléfono, WhatsApp (52 + 10 dígitos) y zona de entrega.
 - `perritos`: la lista. Para cada uno puedes poner `sexoEdad: 'Macho · 2 meses'`.
-  Cuando uno encuentre casa, ponle `adoptado: true` y la tarjeta cambia sola
-  (badge "¡Ya tiene casa!" y sin botón de WhatsApp).
+  Cuando uno encuentre casa, ponle `adoptado: true`. Solo con eso:
+  - su tarjeta muestra el badge "Adoptado", pasa al final y ya no tiene botón de WhatsApp;
+  - el título cambia solo ("Cuatro colitas buscan familia."), igual que "4 por adoptar";
+  - aparece "1 ya encontró casa" en la portada.
+  Haz `git push` y Cloudflare publica el cambio en un par de minutos.
 
 Las fotos están en `public/img/` en dos tamaños WebP (`-480` y `-800`).
 Para agregar una nueva, súbela con el mismo patrón de nombre y usa el nombre base en `foto`.
