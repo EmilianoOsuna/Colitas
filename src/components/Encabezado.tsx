@@ -7,7 +7,7 @@ export function Encabezado() {
         <span className="grid size-9 place-items-center rounded-full bg-sun md:size-10">
           <Huella />
         </span>
-        Cinco colitas
+        7 colitas
       </a>
       <a
         href="#contacto"

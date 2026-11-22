@@ -1,4 +1,4 @@
-# Cinco colitas
+# 7 colitas
 
 Página de adopción de los perritos de Martín. React + Vite + Tailwind CSS v4.
 

@@ -14,7 +14,7 @@ export function Pie() {
       </p>
       <span className="inline-flex items-center gap-1.5 font-bold">
         <Huella className="size-4" />
-        Cinco colitas
+        7 colitas
       </span>
     </footer>
   )
