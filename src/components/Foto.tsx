@@ -1,13 +1,16 @@
+import type React from 'react'
+
 type Props = {
   nombre: string
   alt: string
   sizes: string
   className?: string
   prioridad?: boolean
+  style?: React.CSSProperties
 }
 
 // Sirve la versión de 480 px o 800 px según el ancho de la pantalla.
-export function Foto({ nombre, alt, sizes, className = '', prioridad = false }: Props) {
+export function Foto({ nombre, alt, sizes, className = '', prioridad = false, style }: Props) {
   return (
     <img
       src={`/img/${nombre}-800.webp`}
@@ -20,6 +23,7 @@ export function Foto({ nombre, alt, sizes, className = '', prioridad = false }: 
       decoding="async"
       fetchPriority={prioridad ? 'high' : 'auto'}
       className={className}
+      style={style}
     />
   )
 }

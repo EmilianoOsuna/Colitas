@@ -12,6 +12,7 @@ function Tarjeta({ p }: { p: Perrito }) {
           alt={p.alt}
           sizes={p.adoptado ? '(min-width: 1024px) 210px, (min-width: 768px) 23vw, 46vw' : '(min-width: 1024px) 210px, (min-width: 768px) 30vw, (min-width: 640px) 46vw, 78vw'}
           className={`aspect-[4/5] w-full bg-photo object-cover object-[50%_25%] md:aspect-square md:object-[50%_22%]`}
+          style={p.posicion ? { objectPosition: p.posicion } : undefined}
         />
         {p.adoptado && (
           <span className="absolute top-2.5 left-2.5 inline-flex rotate-[-6deg] items-center gap-1.5 rounded-full border-2 border-white bg-sun px-2.5 py-0.5 text-[13px] font-extrabold md:top-3 md:left-3 md:px-3 md:py-1 md:text-sm">
